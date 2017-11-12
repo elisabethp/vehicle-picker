@@ -1,0 +1,57 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+}
+#site-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+#site-container div {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 1% 3%;
+    position: relative;
+    top: 30%;
+}
+span {
+    font-size: 2em;
+}
+select {
+    width: 33%;
+    height: 30px;
+    margin: 1%;
+    font-size: 1em;
+}
+#selected-car {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    #site-container div {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #site-container div {
+        width: 80%;
+        margin: 3%;
+        top: 25%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #site-container div {
+        display: block;
+        text-align: center;
+        top: 15%;
+    }
+    select {
+        margin: 3%;
+        width: 100%;
+    }
+    
+}
